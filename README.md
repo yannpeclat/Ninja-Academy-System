@@ -1,40 +1,64 @@
-# Lista Ninja (Ninja Academy System)
+<h1 align="center">🥷 Lista Ninja</h1>
 
-Sistema de gerenciamento de ninjas desenvolvido em Java, com foco em Programação Orientada a Objetos (POO) utilizando conceitos como herança e polimorfismo.
+<p align="center">
+  Sistema de gerenciamento de ninjas em Java com foco em Programação Orientada a Objetos
+</p>
 
-Projeto criado como parte da minha evolução na trilha de Backend com Java.
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-25-orange?style=for-the-badge&logo=java">
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/POO-Herança%20%7C%20Polimorfismo-blue?style=for-the-badge">
+</p>
 
-🎯 Objetivo
+---
 
-Simular uma pequena academia ninja onde é possível:
+## 🎯 Sobre o Projeto
 
-Criar ninjas de diferentes clãs
-Listar ninjas cadastrados
-Visualizar detalhes individuais
-🚀 Funcionalidades
-✅ Criação de ninjas (Uchiha e Uzumaki)
-✅ Listagem de ninjas cadastrados
-✅ Visualização detalhada de cada ninja
-✅ Menu interativo via terminal
-✅ Validação de entradas do usuário
-🧠 Conceitos Aplicados
-Programação Orientada a Objetos (POO)
-Herança
-Polimorfismo
-Arrays de objetos
-Estruturas de controle (switch, do-while)
-Entrada de dados com Scanner
-🏗️ Estrutura do Projeto
+Projeto desenvolvido para praticar conceitos fundamentais de **Programação Orientada a Objetos (POO)** em Java.
+
+A aplicação simula uma academia ninja onde é possível cadastrar e visualizar ninjas de diferentes clãs.
+
+---
+
+## 📸 Preview do Sistema
+
+<p align="center">
+  <img src="Preview.gif" width="600" style="border-radius: 10px;">
+</p>
+
+---
+
+## 🚀 Funcionalidades
+
+- ✅ Criar ninjas (Uchiha e Uzumaki)
+- ✅ Listar ninjas cadastrados
+- ✅ Visualizar detalhes de cada ninja
+- ✅ Menu interativo via terminal
+- ✅ Validação de entradas
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- Programação Orientada a Objetos (POO)
+- Herança
+- Polimorfismo
+- Arrays de objetos
+- Estruturas de controle (`switch`, `do-while`)
+- Entrada de dados com `Scanner`
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+```bash
 src/
 ├── Program.java
 └── entities/
-├── Ninja.java
-├── Uchiha.java
-└── Uzumaki.java
-🧬 Modelo de Classes
-Ninja → Classe base
-Uchiha e Uzumaki → Especializações com comportamentos próprios
-💻 Como Executar
+    ├── Ninja.java
+    ├── Uchiha.java
+    └── Uzumaki.java
+```
 # Clone o repositório
 git clone https://github.com/yannpeclat/Ninja-Academy-System.git
 
@@ -46,30 +70,27 @@ javac entities/*.java Program.java
 
 # Execute
 java Program
-📈 Evolução do Projeto
-v1.0 → Estrutura inicial com herança
-v1.1 → Menu interativo
-v1.2 → Uso de switch expression
-v1.3 → Validação de dados
-🔮 Próximos Passos
-Substituir array por ArrayList
-Implementar edição de ninja
-Implementar remoção de ninja
-Melhorar organização em pacotes
-Persistência de dados (arquivo ou banco)
-🎯 Diferenciais
 
-Este projeto demonstra na prática:
-
-Aplicação de POO além da teoria
-Organização básica de código
-Interação com usuário via CLI
-Evolução progressiva de um sistema simples
-👨‍💻 Autor
+## 📈 Evolução do Projeto
+- v1.0 → Estrutura inicial com herança
+- v1.1 → Menu interativo
+- v1.2 → Uso de switch expression
+- v1.3 → Validação de dados
+## 🔮 Roadmap
+### 🔹 Próximas melhorias
+- Substituir array por ArrayList
+- Implementar edição de ninja
+- Implementar remoção de ninja
+### 🔹 Futuro (nível avançado)
+- Persistência de dados (arquivo ou banco)
+- API com Spring Boot
+- Interface gráfica
+## 👨‍💻 Autor
 
 Yann Peclat
-Em transição para Engenharia de Software com foco em Backend Java.
 
-📄 Licença
+Futuro Engenheiro de Software focado em Backend Java 🚀
+
+## 📄 Licença
 
 Este projeto está sob a licença MIT.
