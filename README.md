@@ -1,147 +1,75 @@
-Ninja Academy System
-Java
-GitHub stars
+# Lista Ninja (Ninja Academy System)
 
-Sistema completo de gerenciamento da Academia Ninja com herança, polimorfismo e menus interativos!
+Sistema de gerenciamento de ninjas desenvolvido em Java, com foco em Programação Orientada a Objetos (POO) utilizando conceitos como herança e polimorfismo.
 
-🎮 Demo
+Projeto criado como parte da minha evolução na trilha de Backend com Java.
 
-Copy code
-=== NINJAS MENU ===
-1. Criar Ninja    2. Listar Ninja    0. Sair
-> 1
+🎯 Objetivo
 
-1. Uchiha    2. Uzumaki
-> 1
-Nome: Sasuke    Idade: 17    Aldeia: Folha
-✅ Sasuke criado!
+Simular uma pequena academia ninja onde é possível:
 
-> 2
-1. Sasuke
-> 1
-=== Detalhes ===
-Nome: Sasuke    Aldeia: Folha    Idade: 17
-Habilidade: Sharingan Ativado! 🔥
+Criar ninjas de diferentes clãs
+Listar ninjas cadastrados
+Visualizar detalhes individuais
 🚀 Funcionalidades
-Feature
-
-Status
-
-✅ **Herança Polimórfica
-
-Ninja ← Uchiha, Uzumaki
-
-✅ **Menu Interativo
-
-do...while + switch expression
-
-✅ **CRUD Completo
-
-Criar + Listar + Selecionar
-
-✅ **Validação Robusta
-
-Tipos inválidos + Buffer
-
-✅ **UX Profissional
-
-Locale.US + Mensagens claras
-
-🏗️ Arquitetura
-
-Copy code
+✅ Criação de ninjas (Uchiha e Uzumaki)
+✅ Listagem de ninjas cadastrados
+✅ Visualização detalhada de cada ninja
+✅ Menu interativo via terminal
+✅ Validação de entradas do usuário
+🧠 Conceitos Aplicados
+Programação Orientada a Objetos (POO)
+Herança
+Polimorfismo
+Arrays de objetos
+Estruturas de controle (switch, do-while)
+Entrada de dados com Scanner
+🏗️ Estrutura do Projeto
 src/
-├── Program.java           # Menu + Controller
+├── Program.java
 └── entities/
-├── Ninja.java         # Abstract Parent
-├── Uchiha.java        # Sharingan 🔥
-└── Uzumaki.java       # Bijuu Mode 💥
-Diagrama UML
-mermaid
-
-Copy code
-classDiagram
-class Ninja {
--String nome
--int idade
--String aldeia
-+mostrarInformacoes()
-}
-class Uchiha {
--String habilidadeEspecialUchiha
-+mostrarInformacoes()
-}
-class Uzumaki {
--String habilidadeEspecialUzumaki  
-+mostrarInformacoes()
-}
-Ninja <|-- Uchiha
-Ninja <|-- Uzumaki
+├── Ninja.java
+├── Uchiha.java
+└── Uzumaki.java
+🧬 Modelo de Classes
+Ninja → Classe base
+Uchiha e Uzumaki → Especializações com comportamentos próprios
 💻 Como Executar
-bash
+# Clone o repositório
+git clone https://github.com/yannpeclat/Ninja-Academy-System.git
 
-Copy code
-# 1. Clone
-git clone https://github.com/SeuUser/ninja-academy.git
-cd ninja-academy/src
+# Acesse a pasta
+cd Ninja-Academy-System/src
 
-# 2. Compile
+# Compile
 javac entities/*.java Program.java
 
-# 3. Execute
+# Execute
 java Program
-🧠 Evolução do Projeto
-v1.0
+📈 Evolução do Projeto
+v1.0 → Estrutura inicial com herança
+v1.1 → Menu interativo
+v1.2 → Uso de switch expression
+v1.3 → Validação de dados
+🔮 Próximos Passos
+Substituir array por ArrayList
+Implementar edição de ninja
+Implementar remoção de ninja
+Melhorar organização em pacotes
+Persistência de dados (arquivo ou banco)
+🎯 Diferenciais
 
-Classes básicas + Herança
+Este projeto demonstra na prática:
 
-v1.1
+Aplicação de POO além da teoria
+Organização básica de código
+Interação com usuário via CLI
+Evolução progressiva de um sistema simples
+👨‍💻 Autor
 
-Menu interativo** do...while
-
-v1.2
-
-Switch expression** (Java 14+)
-
-v1.3
-
-Validação nula** ninjaNovo != null
-
-v2.0
-
-➡️ **Próximos upgrades
-
-🔮 Roadmap v2.0+
-Imediato (v2.0)
-[ ] Deletar Ninja (case 4)
-[ ] Editar Ninja (case 5)
-[ ] ArrayList dinâmico
-[ ] Limite academia (5/10 ninjas)
-Avançado (v3.0)
-[ ] Salvar/ Carregar File I/O
-[ ] Mais clãs Senju, Hyuga
-[ ] Batalha Interface Atacante
-[ ] JSON Gson export
-Enterprise (v4.0)
-[ ] Banco SQLite
-[ ] REST API Spring Boot
-[ ] Frontend React
-[ ] Docker 🐳
-🎯 Conceitos Dominados
-
-Copy code
-🔥 Herança + Polimorfismo
-🔥 Arrays de objetos
-🔥 Switch expression (Java moderno)
-🔥 Validação entrada
-🔥 Gerenciamento memória
-🔥 UX/CLI profissional
-👨‍💻 Desenvolvedor
-Yann - LinkedIn
-De iniciante a arquiteto em 1 aula! 🚀
+Yann Peclat
+Em transição para Engenharia de Software com foco em Backend Java.
 
 📄 Licença
-MIT License - Use livremente!
 
-⭐ Star se curtiu!
-🤝 Fork e contribua!
+Este projeto está sob a licença MIT.
