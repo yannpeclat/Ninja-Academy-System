@@ -23,7 +23,7 @@ A aplicação simula uma academia ninja onde é possível cadastrar e visualizar
 ## 📸 Preview do Sistema
 
 <p align="center">
-  <img src="Preview.gif" width="600" style="border-radius: 10px;">
+  <img src="preview.gif" width="600" style="border-radius: 10px;">
 </p>
 
 ---
