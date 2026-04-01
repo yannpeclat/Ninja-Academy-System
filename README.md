@@ -16,25 +16,30 @@
 
 Projeto desenvolvido para praticar conceitos fundamentais de **Programação Orientada a Objetos (POO)** em Java.
 
-A aplicação simula uma academia ninja onde é possível cadastrar e visualizar ninjas de diferentes clãs.
+A aplicação simula uma academia ninja onde é possível cadastrar, visualizar, editar e remover ninjas de diferentes clãs.
 
 ---
 
 ## 📸 Preview do Sistema
 
 <p align="center">
-  <img src="preview.gif" width="600" style="border-radius: 10px;">
+  <img src="preview.gif" width="600">
 </p>
 
 ---
 
 ## 🚀 Funcionalidades
 
+### 🔹 Operações principais
 - ✅ Criar ninjas (Uchiha e Uzumaki)
 - ✅ Listar ninjas cadastrados
 - ✅ Visualizar detalhes de cada ninja
+- ✅ Editar ninjas existentes
+- ✅ Remover ninjas
+
+### 🔹 Extras
 - ✅ Menu interativo via terminal
-- ✅ Validação de entradas
+- ✅ Validação de entradas do usuário
 
 ---
 
@@ -59,6 +64,11 @@ src/
     ├── Uchiha.java
     └── Uzumaki.java
 ```
+
+---
+
+## 💻 Como Executar
+```bash
 # Clone o repositório
 git clone https://github.com/yannpeclat/Ninja-Academy-System.git
 
@@ -70,25 +80,36 @@ javac entities/*.java Program.java
 
 # Execute
 java Program
+```
+
+---
 
 ## 📈 Evolução do Projeto
-- v1.0 → Estrutura inicial com herança
-- v1.1 → Menu interativo
-- v1.2 → Uso de switch expression
-- v1.3 → Validação de dados
+- v1.0.0 → Estrutura inicial com herança
+- v1.1.0 → Implementação de menu interativo
+- v1.2.0 → Uso de switch expression
+- v1.3.0 → Validação de dados de entrada
+- v2.0.0 → CRUD completo (criar, listar, editar, excluir ninjas)
+
+---
+
 ## 🔮 Roadmap
-### 🔹 Próximas melhorias
+🔹 Próximas melhorias
+
 - Substituir array por ArrayList
-- Implementar edição de ninja
-- Implementar remoção de ninja
-### 🔹 Futuro (nível avançado)
+- Melhorar organização em pacotes
+
+🔹 Futuro (nível avançado)
+
 - Persistência de dados (arquivo ou banco)
 - API com Spring Boot
 - Interface gráfica
+
+---
+
 ## 👨‍💻 Autor
 
 Yann Peclat
-
 Futuro Engenheiro de Software focado em Backend Java 🚀
 
 ## 📄 Licença
