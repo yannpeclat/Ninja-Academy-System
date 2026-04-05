@@ -30,57 +30,59 @@ public class Program {
                 case 1:
                     // Aqui quando o usuario selecionar essa opcao 1, vai abrir um outro menu pedindo para que ele informe se ele quer um Ninja Uchiha ou um Ninja Uzumaki
                     // Assim que pedir para o usuario escolher o tipo de ninja, voce vai pedir para ele informar o nome, a idade e a aldeia do ninja, e depois disso voce vai criar o ninja e armazenar ele no array de ninjas.
-                    if(ninjasCadastrados >= 5) {
+                    if (ninjasCadastrados >= 5) {
                         System.out.println("\n📦 Academia lotada!\n");
                         continue;
                     }
 
-                    System.out.println("\n=== Escolha o tipo de Ninja ===");
-                    System.out.println("1. Uchiha");
-                    System.out.println("2. Uzumaki");
-                    System.out.print("Escolha uma opcao: ");
-                    int tipoNinja = input.nextInt();
-                    input.nextLine();  // Limpeza de Buffer
+                    int maxClans = 2;
+                    int tipoNinja;
+                    do {
+                        System.out.println("\n=== Escolha o tipo de Ninja ===");
+                        System.out.println("1. Uchiha");
+                        System.out.println("2. Uzumaki");
+                        System.out.print("Escolha uma opcao: ");
+                        tipoNinja = input.nextInt();
+                        input.nextLine();  // Limpeza de Buffer
+
+                        if (tipoNinja < 1 || tipoNinja > maxClans) {
+                            System.out.println("\n❌ Opcao invalida! Apenas as opçoes do menu!");
+                        }
+                    } while (tipoNinja < 1 || tipoNinja > maxClans);
+
+                    // Coleta dados PRIMEIRO
+                    System.out.print("Nome: ");
+                    String nome = input.nextLine();
+                    System.out.print("Idade: ");
+                    int idade = input.nextInt();
+                    input.nextLine();
+                    System.out.print("Aldeia: ");
+                    String aldeia = input.nextLine();
 
                     Ninja ninjaNovo = switch(tipoNinja) {
-                        case 1 ->  new Uchiha();
-                        case 2 ->  new Uzumaki();
-                        default -> null;
+                        case 1 -> new Uchiha(nome, idade, aldeia);
+                        case 2 -> new Uzumaki(nome, idade, aldeia);
+                        default -> null;  // Backup impossível
                     };
 
-                    if (ninjaNovo != null) {
-                        // Dados comuns para todos os ninjas
-                        System.out.print("Digite o nome do ninja: ");
-                        ninjaNovo.nome = input.nextLine();
-                        System.out.print("Digite a idade do ninja: ");
-                        ninjaNovo.idade = input.nextInt();
-                        input.nextLine();  // Limpeza de Buffer
-                        System.out.print("Digite a aldeia do ninja: ");
-                        ninjaNovo.aldeia = input.nextLine();
-                    } else {
-                        System.out.println("❌ Inválido! Escolha entre as opcoes");
-                        continue;
-                    }
-
                     // Armazenar agora
-                    ninjas[ninjasCadastrados] = ninjaNovo;
-                    ninjasCadastrados++;
+                    ninjas[ninjasCadastrados++] = ninjaNovo;
                     System.out.println("\n✅ " + ninjaNovo.nome + " criado!");
                     break;
                 case 2:
                     // Aqui voce vai Listar os ninjas cadastrados, e vai poder selecionar o ninja que voce quer mostrar as informacoes.
-                    if(ninjasCadastrados == 0) {
+                    if (ninjasCadastrados == 0) {
                         System.out.println("\n❌ Nenhum ninja cadastrado ainda!");
                     } else {
                         System.out.println("\n=== Ninjas Cadastrados ===");
-                        for(int i = 0; i < ninjasCadastrados; i++) {
+                        for (int i = 0; i < ninjasCadastrados; i++) {
                             System.out.println((i + 1) + " | " + ninjas[i].nome);
                         }
                         System.out.print("\nEscolha um ninja para ver detalhes (0 para voltar): ");
                         int escolhaNinja = input.nextInt();
                         input.nextLine();  // Limpeza de Buffer
 
-                        if(escolhaNinja > 0 && escolhaNinja <= ninjasCadastrados) {
+                        if (escolhaNinja > 0 && escolhaNinja <= ninjasCadastrados) {
                             System.out.println("\n=== Detalhes do Ninja ===");
                             ninjas[escolhaNinja - 1].mostrarInformacoes();
                         } else if (escolhaNinja != 0) {
