@@ -48,9 +48,12 @@ A aplicação simula uma academia ninja onde é possível cadastrar, visualizar,
 - Programação Orientada a Objetos (POO)
 - Herança
 - Polimorfismo
+- Construtores
+- Sobrecarga de construtores (se aplicável)
 - Arrays de objetos
 - Estruturas de controle (`switch`, `do-while`)
 - Entrada de dados com `Scanner`
+- Validação de dadosgit
 
 ---
 
