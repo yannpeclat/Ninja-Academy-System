@@ -53,7 +53,7 @@ A aplicação simula uma academia ninja onde é possível cadastrar, visualizar,
 - Arrays de objetos
 - Estruturas de controle (`switch`, `do-while`)
 - Entrada de dados com `Scanner`
-- Validação de dadosgit
+- Validação de dados
 
 ---
 

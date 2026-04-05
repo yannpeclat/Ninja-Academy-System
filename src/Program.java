@@ -37,6 +37,8 @@ public class Program {
 
                     int maxClans = 2;
                     int tipoNinja;
+                    // Validacao com Do while criando um um variavel que se chama maxClans para que futuramente caso tenha mais clans eu so aumentar essa variavel e crio em cima uma variavel tipoNinja so para
+                    // guardar a resposta do usuario
                     do {
                         System.out.println("\n=== Escolha o tipo de Ninja ===");
                         System.out.println("1. Uchiha");
@@ -50,7 +52,7 @@ public class Program {
                         }
                     } while (tipoNinja < 1 || tipoNinja > maxClans);
 
-                    // Coleta dados PRIMEIRO
+                    // Coleta dados
                     System.out.print("Nome: ");
                     String nome = input.nextLine();
                     System.out.print("Idade: ");
@@ -66,7 +68,8 @@ public class Program {
                     };
 
                     // Armazenar agora
-                    ninjas[ninjasCadastrados++] = ninjaNovo;
+                    ninjas[ninjasCadastrados] = ninjaNovo;
+                    ninjasCadastrados++;
                     System.out.println("\n✅ " + ninjaNovo.nome + " criado!");
                     break;
                 case 2:
