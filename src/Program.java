@@ -1,8 +1,8 @@
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Ninja;
-import entities.Uchiha;
-import entities.Uzumaki;
+import model.entities.Ninja;
+import model.entities.Uchiha;
+import model.entities.Uzumaki;
 
 public class Program {
     public static void main(String[] args) {

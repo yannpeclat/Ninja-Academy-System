@@ -62,7 +62,7 @@ A aplicação simula uma academia ninja onde é possível cadastrar, visualizar,
 ```bash
 src/
 ├── Program.java
-└── entities/
+└── model.entities/
     ├── Ninja.java
     ├── Uchiha.java
     └── Uzumaki.java
@@ -79,7 +79,7 @@ git clone https://github.com/yannpeclat/Ninja-Academy-System.git
 cd Ninja-Academy-System/src
 
 # Compile
-javac entities/*.java Program.java
+javac model.entities/*.java Program.java
 
 # Execute
 java Program

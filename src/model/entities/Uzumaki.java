@@ -1,4 +1,4 @@
-package entities;
+package model.entities;
 
 public class Uzumaki extends Ninja{
     String habilidadeEspecialUzumaki = "Biju - Raposa de 7 Caldas";

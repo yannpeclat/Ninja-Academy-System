@@ -1,4 +1,4 @@
-package entities;
+package model.entities;
 
 public class Uchiha extends Ninja {
     String habilidadeEspecialUchiha = "Sharingan Ativado";
