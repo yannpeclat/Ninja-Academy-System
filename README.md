@@ -43,13 +43,13 @@ A aplicação simula uma academia ninja onde é possível realizar operações c
 
 ### Operações Principais
 
-| Funcionalidade | Descrição |
-|----------------|-----------|
-| ➕ **Criar** | Cadastro de novos ninjas dos clãs Uchiha e Uzumaki |
-| 📋 **Listar** | Visualização de todos os ninjas cadastrados |
+| Funcionalidade | Descrição                                        |
+|----------------|--------------------------------------------------|
+| ➕ **Criar** | Cadastro de novos ninjas, diversos clãs          |
+| 📋 **Listar** | Visualização de todos os ninjas cadastrados      |
 | 👁️ **Detalhes** | Exibição de informações detalhadas de cada ninja |
-| ✏️ **Editar** | Atualização de dados de ninjas existentes |
-| ❌ **Remover** | Exclusão de ninjas do sistema |
+| ✏️ **Editar** | Atualização de dados de ninjas existentes        |
+| ❌ **Remover** | Exclusão de ninjas do sistema                    |
 
 ### Diferenciais
 
@@ -186,17 +186,14 @@ Após executar, você será apresentado ao menu interativo. Basta seguir as inst
 
 ## 🎬 Demonstração
 
-> 📝 *Adicione aqui um GIF ou screenshot da aplicação em funcionamento*
-
 ```
 ┌─────────────────────────────────────────┐
-│        🥷 NINJA ACADEMY SYSTEM 🥷       │
+│        🥷 NINJA ACADEMY SYSTEM 🥷         │
 ├─────────────────────────────────────────┤
 │  1. Criar Ninja                         │
-│  2. Listar Ninjas                       │
-│  3. Ver Detalhes                        │
-│  4. Editar Ninja                        │
-│  5. Remover Ninja                       │
+│  2. Listar Ninjas                       │                       │
+│  3. Editar Ninja                        │
+│  4. Remover Ninja                       │
 │  0. Sair                                │
 └─────────────────────────────────────────┘
 ```
@@ -234,10 +231,10 @@ Após executar, você será apresentado ao menu interativo. Basta seguir as inst
 
 <div align="center">
 
-| ![Yann Peclat](https://ui-avatars.com/api/?name=Yann+Peclat&background=0D8ABC&color=fff&size=100) |
-|:-:|
-| **Yann Peclat** |
-| Futuro Engenheiro de Software focado em Backend Java 🚀 |
+| ![Yann Peclat](https://ui-avatars.com/api/?name=Yann+Peclat&background=0D8ABC&color=fff&size=50) |
+|:------------------------------------------------------------------------------------------------:|
+|                                         **Yann Peclat**                                          |
+|                     Futuro Engenheiro de Software focado em Backend Java 🚀                      |
 
 </div>
 
