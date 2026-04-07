@@ -1,4 +1,4 @@
-# 🥷 Ninja Academy System
+<h1 align="center"># 🥷 Ninja Academy System</h1>
 
 <div align="center">
 
