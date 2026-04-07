@@ -1,7 +1,6 @@
 package model.entities;
 
 public class Uchiha extends Ninja {
-    String habilidadeEspecialUchiha = "Sharingan Ativado";
 
     public Uchiha(String nome, int idade, String aldeia) {
         super(nome, idade, aldeia);  // Chama Ninja!
@@ -13,8 +12,14 @@ public class Uchiha extends Ninja {
     }
 
     @Override
+    public void usarHabilidadeEspecial() {
+        System.out.println("Sharingan ativado! 👁️");
+    }
+
+    @Override
     public void mostrarInformacoes() {
         super.mostrarInformacoes();
-        System.out.println("Habilidade Especial: " + habilidadeEspecialUchiha);
+        System.out.println("Clã: Uchiha");
+        usarHabilidadeEspecial();
     }
 }
