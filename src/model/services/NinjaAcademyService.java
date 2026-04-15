@@ -201,7 +201,7 @@ public class NinjaAcademyService {
     }
 
     private void editarNinja(Ninja ninja) {
-        System.out.println("\\n1. Editar Nome\\n2. Editar Idade\\n3. Editar Aldeia\\n4. Editar todas\\n9. Voltar");
+        System.out.println("\n1. Editar Nome\n2. Editar Idade\n3. Editar Aldeia\n4. Editar todas\n9. Voltar");
         int op =  lerInteiro("Opcao: ");
         switch (op) {
             case 1 -> ninja.setNome(lerObrigatorio("Novo nome: "));
