@@ -1,19 +1,19 @@
 package model.entities;
 import model.enums.Rank;
 
-public class Uzumaki extends Ninja{
+public class Nara extends Ninja {
     // Construtor SEM rank informado → chama super de 3 parâmetros → vira Genin
-    public Uzumaki(String nome, int idade, String aldeia) {
+    public Nara(String nome, int idade, String aldeia) {
         super(nome, idade, aldeia);
     }
 
     // Construtor COM rank informado → chama super de 4 parâmetros
-    public Uzumaki(String nome, int idade, String aldeia, Rank rankAtual) {
+    public Nara(String nome, int idade, String aldeia, Rank rankAtual) {
         super(nome, idade, aldeia, rankAtual);
     }
 
     @Override
     public String getHabilidadeEspecial() {
-        return "Grande Reserva de Chakra e Modo Sabio";
+        return "Shadow Possession e QI Elevado";
     }
 }
