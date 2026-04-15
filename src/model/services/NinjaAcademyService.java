@@ -110,6 +110,7 @@ public class NinjaAcademyService {
     private void gerenciarNinjaSelecionado(int indice) {
         Ninja ninja = ninjas.get(indice);
         int opcao;
+        boolean ninjaRemovido = false;
         do {
             System.out.println("1. Historico de Missoes");
             System.out.println("2. Editar Ninja");
@@ -117,13 +118,29 @@ public class NinjaAcademyService {
             System.out.println("9. Voltar");
             opcao = lerInteiro("Opcao: ");
             switch (opcao) {
-                case 1 -> gerenciarHistorico(ninja);
-                case 2 -> editarNinja(ninja);
-                case 3 -> removerNinja(indice);
+                case 1 -> {
+                    if (!ninjaRemovido) {
+                        gerenciarHistorico(ninja);
+                    } else {
+                        System.out.println("\n❌ Ninja já foi removido! Voltando ao menu...\n");
+                    }
+                }
+                case 2 -> {
+                    if (!ninjaRemovido) {
+                        editarNinja(ninja);
+                        System.out.println("\n✅ Informações atualizadas!");
+                        ninja.mostrarInfo();
+                    } else {
+                        System.out.println("\n❌ Ninja já foi removido! Voltando ao menu...\n");
+                    }
+                }
+                case 3 -> {
+                    ninjaRemovido = removerNinja(indice);
+                }
                 case 9 -> System.out.println("Voltando ao menu...");
                 default -> System.out.println("\n❌ Opção inválida! Tente novamente.\n");
             }
-        } while (opcao != 9);
+        } while (opcao != 9 && !ninjaRemovido);
     }
 
     private void gerenciarHistorico(Ninja ninja) {
@@ -200,7 +217,7 @@ public class NinjaAcademyService {
         }
     }
 
-    private void removerNinja(int indice) {
+    private boolean removerNinja(int indice) {
         String nome = ninjas.get(indice).getNome();
         while (true) {
             System.out.println("Tem certeza que deseja remover o ninja (" + nome + ") (Y/N): ");
@@ -208,10 +225,10 @@ public class NinjaAcademyService {
             if (resp.equals("Y")) {
                 ninjas.remove(indice);
                 System.out.println("✅" + nome + " excluido!");
-                break;
+                return true;
             } else if (resp.equals("N")) {
-                System.out.println("Volta ao Menu");
-                break;
+                System.out.println("Operação cancelada. Voltando ao submenu...");
+                return false;
             } else {
                 System.out.println("⚠\uFE0F Digite apenas Y ou N.");
             }
